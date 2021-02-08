@@ -7,15 +7,12 @@ public class GerenciadorNotas {
         return aluno;
     }
 
-    public double calculaNota(double notaFinal) {
+    public void calculaNota(double notaFinal) {
 
         if (notaFinal >= 7) {
             System.out.println(" " + notaFinal + " Aprovado");
         } else {
             System.out.println(" " + notaFinal + " Reprovado");
         }
-        return notaFinal;
-
     }
-
 }
