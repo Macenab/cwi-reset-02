@@ -7,28 +7,20 @@ public class Filme {
     private double avaliacao;
     private int anoDeLancamento;
 
-    public Filme() {
-
-        }
-
-    public class Diretor {
-
-        private String nomeDiretor;
-        private int idadeDiretor;
-        private int quantidadeDeFilmesDirigidos;
-
-
-        public Diretor() {
-
-        }
+    public Filme(String nomeFilme, String descricao, String duracao) {
+        this.nomeFilme = nomeFilme;
+        this.descricao = descricao;
+        this.duracao = duracao;
+        this.avaliacao = avaliacao;
+        this.anoDeLancamento = anoDeLancamento;
 
     }
 
-    public void reproduzir(String nomeFilme, String descricao, String duracao, String nomeDiretor) {
-        System.out.println("Nome: " + nomeFilme);
-        System.out.println("Descrição: " + descricao);
-        System.out.println("Duração: " + duracao);
-        System.out.println("Diretor: " + nomeDiretor);
+    public void reproduzir (Diretor nomeDiretor) {
+        System.out.println("Nome: " + this.nomeFilme);
+        System.out.println("Descrição: " + this.descricao);
+        System.out.println("Duração: " + this.duracao);
+        System.out.println("Diretor: " + nomeDiretor.getNomeDiretor());
         System.out.println("Iniciando reprodução...");
 
     }
