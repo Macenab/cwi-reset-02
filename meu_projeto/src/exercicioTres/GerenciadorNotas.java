@@ -1,7 +1,6 @@
 package exercicioTres;
 
 public class GerenciadorNotas {
-    int soma = 0;
 
     public String nomeAluno(String aluno) {
         return aluno;

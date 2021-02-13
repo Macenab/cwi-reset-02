@@ -5,7 +5,7 @@ public class Aplicacao {
         GerenciadorNotas situacao = new GerenciadorNotas();
 
         System.out.print(situacao.nomeAluno("Bruno"));
-        situacao.calculaNota(10);
+        situacao.calculaNota(5);
 
     }
 }
