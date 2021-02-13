@@ -1,28 +1,28 @@
 package exercicioUm;
 
-public class Diretor {
+public class Diretor extends Pessoa {
 
-        private String nomeDiretor;
-        private int idadeDiretor;
-        private int quantidadeDeFilmesDirigidos;
-        private Genero genero;
+    private int quantidadeDeFilmesDirigidos;
 
-    public Diretor(String nomeDiretor, int idadeDiretor, int quantidadeDeFilmesDirigidos, Genero genero) {
-        this.nomeDiretor = nomeDiretor;
-        this.idadeDiretor = idadeDiretor;
+
+    public Diretor(String nome, int idade, int quantidadeDeFilmesDirigidos, Genero genero) {
+        super(nome, idade, genero);
         this.quantidadeDeFilmesDirigidos = quantidadeDeFilmesDirigidos;
-        this.genero = genero;
     }
 
-    public String getNomeDiretor() {
-            return nomeDiretor;
-        }
-
-    public void diretorMethod () {
-        System.out.println("Nome: " + this.nomeDiretor);
-        System.out.println("Idade: " + this.idadeDiretor);
-        System.out.println("Genero: " + this.genero);
-
-
+    public void printaAtributos() {
+        super.printaAtributos();
     }
+
+//    public String getNomeDiretor() {
+//            return nome;
+//        }
+
+
+//    public void diretorMethod () {
+//        System.out.println("Nome: " + this.nomeDiretor);
+//        System.out.println("Idade: " + this.idadeDiretor);
+//        System.out.println("Genero: " + this.genero.getGenero());
+//
+//    }
 }

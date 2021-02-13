@@ -20,7 +20,6 @@ public class Filme {
         System.out.println("Nome: " + this.nomeFilme);
         System.out.println("Descrição: " + this.descricao);
         System.out.println("Duração: " + this.duracao);
-        System.out.println("Diretor: " + nomeDiretor.getNomeDiretor());
         System.out.println("Iniciando reprodução...");
 
     }
