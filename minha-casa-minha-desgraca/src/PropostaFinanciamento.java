@@ -55,7 +55,7 @@ public class PropostaFinanciamento  {
     public void imprimirPropostaNegada(){
         System.out.println("Beneficiário: " + beneficiario.getNome());
         System.out.println("Imóvel: " + imovelEscolhido.getValor());
-        System.out.println("Prazo: " + mesesParaPagamento);
+        System.out.println("Prazo: " + mesesParaPagamento + " meses");
         System.out.println("Pô tá até tirando os guri mesmo né, pode dando meia volta meu bacano");
 
     }

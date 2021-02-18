@@ -1,11 +1,14 @@
-public class Imovel {
+abstract class Imovel {
 
     private Endereco endereco;
     private double valor;
 
+
     public Imovel(Endereco endereco, double valor) {
         this.endereco = endereco;
         this.valor = valor;
+
+
     }
 
     public Endereco getEndereco() {
@@ -17,7 +20,9 @@ public class Imovel {
     }
 
 
+
     public String apresentacao(){
         return "Imóvel localizado no endereço " + endereco.getLogradouro() + ". Valor: R$ " + valor;
     }
+
 }

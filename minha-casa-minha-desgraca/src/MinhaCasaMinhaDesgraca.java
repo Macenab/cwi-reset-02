@@ -30,10 +30,10 @@ public class MinhaCasaMinhaDesgraca {
 
 
 
-        Imovel imovel1 = new Imovel(endereco1, 74000);
-        Imovel imovel2 = new Imovel(endereco2, 130000);
-        Imovel imovel3 = new Imovel(endereco3, 24000);
-        Imovel imovel4 = new Imovel(endereco4, 70000);
+        Apartamento imovel1 = new Apartamento(endereco1, 74000, 3);
+        Casa imovel2 = new Casa(endereco2, 130000, "Sim");
+        Apartamento imovel3 = new Apartamento(endereco3, 24000, 5);
+        Casa imovel4 = new Casa(endereco4, 70000, "Não");
 
         opcoesParaFinanciamento.registrarImovel(imovel1);
         opcoesParaFinanciamento.registrarImovel(imovel2);
