@@ -23,36 +23,38 @@ public class PropostaFinanciamento  {
 
 
     public void validarProposta() {
+
+    //Porcentagem com exceções
         double regraDeNegocio;
 
         if (imovelEscolhido.getEndereco().getEstado() == UnidadeFederativa.SAO_PAULO_SP){
-            regraDeNegocio = (65) / 100;
+            regraDeNegocio = (65.0) / 100;
         } else if (imovelEscolhido.getEndereco().getEstado() == UnidadeFederativa.RIO_DE_JANEIRO_RJ) {
-            regraDeNegocio = (60) / 100;
+            regraDeNegocio = (60.0) / 100;
         } else {
-            regraDeNegocio = (50) / 100;
+            regraDeNegocio = (50.0) / 100;
         }
 
+    //Regra da proposta de financiamento
 
-        if(beneficiario.getSalario() * mesesParaPagamento >= imovelEscolhido.getValor() * regraDeNegocio) {
+        if((beneficiario.getSalario() * mesesParaPagamento) >= (imovelEscolhido.getValor() * regraDeNegocio)) {
             imprimirPropostaAprovada();
         } else {
             imprimirPropostaNegada();
         }
 
-
     }
 
     public void imprimirPropostaAprovada(){
-        System.out.println("Beneficiário: " + beneficiario);
-        System.out.println("Imóvel: " + imovelEscolhido);
+        System.out.println("Beneficiário: " + beneficiario.getNome());
+        System.out.println("Imóvel: " + imovelEscolhido.getValor());
         System.out.println("Prazo: " + mesesParaPagamento);
         System.out.println("Parabéns! Sua proposta foi aceita, vamo que vamo!");
     }
 
     public void imprimirPropostaNegada(){
-        System.out.println("Beneficiário: " + beneficiario);
-        System.out.println("Imóvel: " + imovelEscolhido);
+        System.out.println("Beneficiário: " + beneficiario.getNome());
+        System.out.println("Imóvel: " + imovelEscolhido.getValor());
         System.out.println("Prazo: " + mesesParaPagamento);
         System.out.println("Pô tá até tirando os guri mesmo né, pode dando meia volta meu bacano");
 
