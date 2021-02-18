@@ -23,14 +23,22 @@ public class MinhaCasaMinhaDesgraca {
                 "Pouso triste", UnidadeFederativa.RIO_GRANDE_DO_SUL_RS);
         Endereco endereco2 = new Endereco("Marte Lada",22, "Q23", "Legalidade",
                 "Vivente", UnidadeFederativa.RIO_GRANDE_DO_SUL_RS);
-
+        Endereco endereco3 = new Endereco("Ima Turidade",77, "Q03", "Pampulha",
+                "Presidente", UnidadeFederativa.RIO_DE_JANEIRO_RJ);
+        Endereco endereco4 = new Endereco("Rebiboca",45, "Q78", "Feia Vista",
+                "uóshimton dece", UnidadeFederativa.SAO_PAULO_SP);
 
 
 
         Imovel imovel1 = new Imovel(endereco1, 74000);
         Imovel imovel2 = new Imovel(endereco2, 130000);
+        Imovel imovel3 = new Imovel(endereco3, 24000);
+        Imovel imovel4 = new Imovel(endereco2, 70000);
 
         opcoesParaFinanciamento.registrarImovel(imovel1);
+        opcoesParaFinanciamento.registrarImovel(imovel2);
+        opcoesParaFinanciamento.registrarImovel(imovel3);
+        opcoesParaFinanciamento.registrarImovel(imovel4);
 
 
 

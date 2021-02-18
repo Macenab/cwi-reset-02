@@ -23,10 +23,38 @@ public class PropostaFinanciamento  {
 
 
     public void validarProposta() {
+        double regraDeNegocio;
+
+        if (imovelEscolhido.getEndereco().getEstado() == UnidadeFederativa.SAO_PAULO_SP){
+            regraDeNegocio = (65) / 100;
+        } else if (imovelEscolhido.getEndereco().getEstado() == UnidadeFederativa.RIO_DE_JANEIRO_RJ) {
+            regraDeNegocio = (60) / 100;
+        } else {
+            regraDeNegocio = (50) / 100;
+        }
+
+
+        if(beneficiario.getSalario() * mesesParaPagamento >= imovelEscolhido.getValor() * regraDeNegocio) {
+            imprimirPropostaAprovada();
+        } else {
+            imprimirPropostaNegada();
+        }
+
 
     }
 
     public void imprimirPropostaAprovada(){
-        
+        System.out.println("Beneficiário: " + beneficiario);
+        System.out.println("Imóvel: " + imovelEscolhido);
+        System.out.println("Prazo: " + mesesParaPagamento);
+        System.out.println("Parabéns! Sua proposta foi aceita, vamo que vamo!");
+    }
+
+    public void imprimirPropostaNegada(){
+        System.out.println("Beneficiário: " + beneficiario);
+        System.out.println("Imóvel: " + imovelEscolhido);
+        System.out.println("Prazo: " + mesesParaPagamento);
+        System.out.println("Pô tá até tirando os guri mesmo né, pode dando meia volta meu bacano");
+
     }
 }
