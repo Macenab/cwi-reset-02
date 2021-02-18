@@ -1,7 +1,13 @@
-public class PropostaFinanciamento extends Beneficiario{
+public class PropostaFinanciamento  {
 
-    public PropostaFinanciamento(String nomeBeneficiario, Double salarioBeneficiario) {
-        super(nomeBeneficiario, salarioBeneficiario);
+    private Beneficiario beneficiario;
+    private Imovel imovelEscolhido;
+    private Integer mesesParaPagamento;
+
+    public PropostaFinanciamento(Beneficiario beneficiario, Imovel imovelEscolhido, Integer mesesParaPagamento) {
+        this.beneficiario = beneficiario;
+        this.imovelEscolhido = imovelEscolhido;
+        this.mesesParaPagamento = mesesParaPagamento;
     }
 
     /**
@@ -14,11 +20,13 @@ public class PropostaFinanciamento extends Beneficiario{
      *      o salário multiplicado pelo prazo deve ser equivalente a 65% e 60% do valor imóvel (respectivamente).
      */
 
-    public void imprimirPropostaAprovada(){
-        System.out.println("Caro " +  + "");
-    }
+
 
     public void validarProposta() {
 
+    }
+
+    public void imprimirPropostaAprovada(){
+        
     }
 }

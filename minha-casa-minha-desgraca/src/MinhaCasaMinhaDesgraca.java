@@ -19,6 +19,21 @@ public class MinhaCasaMinhaDesgraca {
          * NÃO MODIFICAR ESTA CLASSE ANTES DESTA LINHA.
          */
 
+        Endereco endereco1 = new Endereco("Joaquim Pascal",32, "Q40", "Liberdade",
+                "Pouso triste", UnidadeFederativa.RIO_GRANDE_DO_SUL_RS);
+        Endereco endereco2 = new Endereco("Marte Lada",22, "Q23", "Legalidade",
+                "Vivente", UnidadeFederativa.RIO_GRANDE_DO_SUL_RS);
+
+
+
+
+        Imovel imovel1 = new Imovel(endereco1, 74000);
+        Imovel imovel2 = new Imovel(endereco2, 130000);
+
+        opcoesParaFinanciamento.registrarImovel(imovel1);
+
+
+
         /**
          * FIM
          *
