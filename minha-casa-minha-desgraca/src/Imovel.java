@@ -20,9 +20,8 @@ abstract class Imovel {
     }
 
 
-
-    public String apresentacao(){
-        return "Imóvel localizado no endereço " + endereco.getLogradouro() + ". Valor: R$ " + valor;
+    public String apresentacao() {
+        return "Imóvel localizado no endereço " + endereco.getLogradouro() + ", no estado de: " + endereco.getEstado() + ". Valor: R$ " + valor;
     }
 
 }

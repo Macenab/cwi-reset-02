@@ -6,12 +6,8 @@
          this.andar = andar;
      }
 
-     public int getAndar() {
-         return andar;
-     }
-
      @Override
      public String apresentacao(){
-         return super.apresentacao() + " Andar: " + andar + " Imóvel: Apartamento ";
+         return super.apresentacao() + ". Imóvel: Apartamento," + " andar: " + andar;
      }
  }

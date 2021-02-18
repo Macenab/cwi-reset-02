@@ -25,7 +25,7 @@ public class MinhaCasaMinhaDesgraca {
                 "Vivente", UnidadeFederativa.RIO_GRANDE_DO_SUL_RS);
         Endereco endereco3 = new Endereco("Ima Turidade",77, "Q03", "Pampulha",
                 "Presidente", UnidadeFederativa.RIO_DE_JANEIRO_RJ);
-        Endereco endereco4 = new Endereco("Rebiboca",45, "Q78", "Feia Vista",
+        Endereco endereco4 = new Endereco("Rebimboca",45, "Q78", "Feia Vista",
                 "uóshimton dece", UnidadeFederativa.SAO_PAULO_SP);
 
 

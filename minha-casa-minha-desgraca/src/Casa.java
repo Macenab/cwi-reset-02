@@ -6,12 +6,8 @@ public class Casa extends Imovel{
         this.patio = patio;
     }
 
-    public String getPatio() {
-        return patio;
-    }
-
     @Override
     public String apresentacao(){
-        return super.apresentacao() + " Pátio: " + patio + " Imóvel: Casa ";
+        return super.apresentacao() +  ". Imóvel: Casa," + " pátio: " + patio ;
     }
 }

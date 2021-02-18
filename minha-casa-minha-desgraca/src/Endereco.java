@@ -20,22 +20,6 @@ public class Endereco {
         return logradouro;
     }
 
-    public int getNumero() {
-        return numero;
-    }
-
-    public String getComplemento() {
-        return complemento;
-    }
-
-    public String getBairro() {
-        return bairro;
-    }
-
-    public String getCidade() {
-        return cidade;
-    }
-
     public UnidadeFederativa getEstado() {
         return estado;
     }
