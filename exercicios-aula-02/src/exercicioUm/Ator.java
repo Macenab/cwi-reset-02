@@ -1,23 +1,21 @@
 package exercicioUm;
 
+import java.time.LocalDate;
+
 public class Ator extends Pessoa {
     private int numeroDeOscars;
 
 
-    public Ator(String nome, int idade, int numeroDeOscars, Genero genero) {
-        super(nome, idade, genero);
+    public Ator(String nome, int idade, int numeroDeOscars, Genero genero, LocalDate dataDeNascimento) {
+        super(nome, genero, dataDeNascimento);
         this.numeroDeOscars = numeroDeOscars;
 
     }
-
-    public void printaAtributos() {
+    @Override
+   public void printaAtributos() {
         super.printaAtributos();
-    }
+       System.out.println("Numero de Oscars: " + this.numeroDeOscars);
 
-//    public void atorMethod() {
-//        System.out.println("Nome: " + this.nomeAtor);
-//        System.out.println("Idade: " + this.idadeAtor);
-//        System.out.println("Genero: " + this.genero.getGenero());
-//    }
+   }
 
 }

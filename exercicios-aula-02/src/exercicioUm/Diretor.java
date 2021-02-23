@@ -1,28 +1,21 @@
 package exercicioUm;
 
+import java.time.LocalDate;
+
 public class Diretor extends Pessoa {
 
     private int quantidadeDeFilmesDirigidos;
 
 
-    public Diretor(String nome, int idade, int quantidadeDeFilmesDirigidos, Genero genero) {
-        super(nome, idade, genero);
+    public Diretor(String nome, int quantidadeDeFilmesDirigidos, Genero genero, LocalDate dataDeNascimento) {
+        super(nome, genero, dataDeNascimento);
         this.quantidadeDeFilmesDirigidos = quantidadeDeFilmesDirigidos;
     }
 
+    @Override
     public void printaAtributos() {
         super.printaAtributos();
+        System.out.println("Quantidade de filmes dirigidos: " + this.quantidadeDeFilmesDirigidos);
+
     }
-
-//    public String getNomeDiretor() {
-//            return nome;
-//        }
-
-
-//    public void diretorMethod () {
-//        System.out.println("Nome: " + this.nomeDiretor);
-//        System.out.println("Idade: " + this.idadeDiretor);
-//        System.out.println("Genero: " + this.genero.getGenero());
-//
-//    }
 }

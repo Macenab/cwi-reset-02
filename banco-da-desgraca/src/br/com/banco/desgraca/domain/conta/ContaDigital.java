@@ -10,8 +10,10 @@ public class ContaDigital extends Conta implements ContaBancaria {
     private InstituicaoBancaria instituicaoBancaria;
     private TipoConta tipoDeConta;
 
-
-    public ContaDigital(Conta conta) {
+    public ContaDigital(int numeroDaConta, double saldoDaConta, InstituicaoBancaria instituicaoBancaria, TipoConta tipoDeConta) {
+        super(numeroDaConta, saldoDaConta);
+        this.instituicaoBancaria = instituicaoBancaria;
+        this.tipoDeConta = tipoDeConta;
     }
 
     @Override
@@ -31,7 +33,6 @@ public class ContaDigital extends Conta implements ContaBancaria {
 
     @Override
     public void depositar(Double valor) {
-
     }
 
     @Override

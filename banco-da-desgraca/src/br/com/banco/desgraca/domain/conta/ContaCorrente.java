@@ -11,9 +11,11 @@ public class ContaCorrente extends Conta implements ContaBancaria {
     private TipoConta tipoDeConta;
     private InstituicaoBancaria instituicaoBancaria;
 
-    public ContaCorrente(Conta conta) {
-
+    public ContaCorrente(Conta conta, TipoConta tipoDeConta, InstituicaoBancaria instituicaoBancaria) {
+        super(conta.getNumeroDaConta(), conta.getSaldoDaConta());
+        this.instituicaoBancaria = instituicaoBancaria;
     }
+
 
     @Override
     public String toString() {
@@ -28,7 +30,7 @@ public class ContaCorrente extends Conta implements ContaBancaria {
 
     @Override
     public Double consultarSaldo() {
-        System.out.println(getSaldoDaConta());
+        System.out.print("Saldo atual: R$");
         return this.getSaldoDaConta();
     }
 
@@ -36,6 +38,8 @@ public class ContaCorrente extends Conta implements ContaBancaria {
     public void depositar(Double valor) {
         if (valor <= 0) {
             throw new RuntimeException("O valor do depósito tem que ser maior que R$0");
+        } else {
+            this.setSaldoDaConta(getSaldoDaConta() + valor);
         }
     }
 
@@ -44,10 +48,11 @@ public class ContaCorrente extends Conta implements ContaBancaria {
 
         if (valor % 5 != 0) {
             throw new RuntimeException("O valor a ser sacado necessita ser multiplo de R$5,00");
-        } else if (valor >= getSaldoDaConta()) {
+        } else if (valor >= this.getSaldoDaConta()) {
             throw new RuntimeException("O valor a ser sacado excede o saldo atual da conta.");
         } else {
-            System.out.println("O valor a ser sacado é: " + valor);
+            this.setSaldoDaConta(getSaldoDaConta() - valor);
+            System.out.println("O valor a ser sacado é: R$" + valor);
         }
     }
 

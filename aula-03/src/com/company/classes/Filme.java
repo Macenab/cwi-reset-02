@@ -27,7 +27,7 @@ public class Filme {
     }
 
     private void defineAvaliacao(Integer avaliacao) {
-        if (avaliacao < 1 && avaliacao < 5)
+        if (avaliacao > 1 && avaliacao < 5)
             this.avaliacao = 3;
         else if (avaliacao < 1 || avaliacao > 5) {
             throw new IllegalArgumentException("A nota precisa ser um valor entre 1 e 5!");
