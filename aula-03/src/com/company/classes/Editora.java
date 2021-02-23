@@ -5,6 +5,7 @@ public class Editora {
     private String localizacao;
 
     public Editora(String nome, String localizacao) {
+        identificaEditora();
         this.nome = nome;
         this.localizacao = localizacao;
     }

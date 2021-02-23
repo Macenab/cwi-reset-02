@@ -12,7 +12,7 @@ public class AplicacaoTeste {
         Filme filme = new Filme("Batman", "Esperamos q seja bom", 120
                 ,2021, 4, diretor );
 
-        Editora editora = new Editora("D Comics", "R. Joaquim Dutra");
+        Editora editora = new Editora("DC Comics", "R. Joaquim Dutra");
 
         filme.reproduzir();
         editora.identificaEditora();
