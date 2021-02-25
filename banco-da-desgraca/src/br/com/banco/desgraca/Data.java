@@ -9,8 +9,6 @@ public final class Data {
 
     private static LocalDate data = LocalDate.of(2020, 7, 1);
 
-    public Data() {
-    }
 
     /**
      * Utilize este método para obter uma data.

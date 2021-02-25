@@ -20,7 +20,7 @@ public enum InstituicaoBancaria {
     }
 
     public String toString() {
-        return String.format("Instituição Bancaria: " + getInstituicaoBancaria());
+        return String.format(getInstituicaoBancaria());
     }
 
 }
