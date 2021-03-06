@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="41a9e89b-dc46-4ef1-bad0-a212f58dccc6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../banco-da-desgraca/out/production/banco-da-desgraca/br/com/banco/desgraca/BancoDaDesgraca.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../banco-da-desgraca/out/production/banco-da-desgraca/br/com/banco/desgraca/BancoDaDesgraca.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../banco-da-desgraca/out/production/banco-da-desgraca/br/com/banco/desgraca/domain/conta/Conta.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../banco-da-desgraca/out/production/banco-da-desgraca/br/com/banco/desgraca/domain/conta/Conta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../banco-da-desgraca/out/production/banco-da-desgraca/br/com/banco/desgraca/domain/conta/ContaCorrente.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../banco-da-desgraca/out/production/banco-da-desgraca/br/com/banco/desgraca/domain/conta/ContaCorrente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../banco-da-desgraca/out/production/banco-da-desgraca/br/com/banco/desgraca/domain/conta/ContaPoupanca.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../banco-da-desgraca/out/production/banco-da-desgraca/br/com/banco/desgraca/domain/conta/ContaPoupanca.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../banco-da-desgraca/src/br/com/banco/desgraca/BancoDaDesgraca.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../banco-da-desgraca/src/br/com/banco/desgraca/BancoDaDesgraca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../banco-da-desgraca/src/br/com/banco/desgraca/domain/conta/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../banco-da-desgraca/src/br/com/banco/desgraca/domain/conta/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../banco-da-desgraca/src/br/com/banco/desgraca/domain/conta/ContaCorrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../banco-da-desgraca/src/br/com/banco/desgraca/domain/conta/ContaCorrente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../banco-da-desgraca/src/br/com/banco/desgraca/domain/conta/ContaPoupanca.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../banco-da-desgraca/src/br/com/banco/desgraca/domain/conta/ContaPoupanca.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1pDCVUgvCBDP8LHTlHevV1yxYHL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41a9e89b-dc46-4ef1-bad0-a212f58dccc6" name="Default Changelist" comment="" />
+      <created>1614708298211</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614708298211</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
